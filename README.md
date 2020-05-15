@@ -18,21 +18,21 @@ Runs the app on port 3000.<br />
 
 #### Get
 
--Get all departments with endpoint: `/departments`
+- Get all departments with endpoint: `/departments`
 
 #### Post
 
--Create department with endpoint: `/departments`
---with param `name`
+- Create department with endpoint: `/departments`
+  -- with param `name`
 
 ### Products:
 
 #### Post
 
--Create product with endpoint: `/product`
---with params `name`, `price`, `department_id`
+- Create product with endpoint: `/product`
+  -- with params `name`, `price`, `department_id`
 
--Get products with endpoint: `/products`
---with params `pageIndex`, `pageCount`, `department` (department id), `promo` (promo code), `search` (product name)
+- Get products with endpoint: `/products`
+  -- with params `pageIndex`, `pageCount`, `department` (department id), `promo` (promo code), `search` (product name)
 
-<b>I wish I had more time to do routes for create promo code and assign it to product</b>
+<b>I wish I had more time to add routes for create promo code and assign it to product</b>
