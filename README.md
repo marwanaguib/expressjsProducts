@@ -8,7 +8,7 @@
 - Database connection is in `config/db.config.js`
 - To add sample data to database uncomment line 18,19 in `app/models/db.js`: `db.init(connection)`, `db.dummyData(connection)`;
 
-## Run scripts `node server`
+## Run scripts `node server` `nodemon server`
 
 Runs the app on port 3000.<br />
 
@@ -36,4 +36,13 @@ Runs the app on port 3000.<br />
 - Get products with endpoint: `/products`
   - With params `pageIndex`, `pageCount`, `department` (department id), `promo` (promo code), `search` (product name)
 
-<b>I wish I had more time to add routes for create promo code and assign it to product</b>
+### Promo Codes:
+
+#### Post
+
+- Create promotion with endpoint: `/promo`
+
+  - With params `code`, `active` (takes 1 or 2), `discount` (takes discount percentage ex: 10%)
+
+- Assign promotion to product: `/product-promo`
+  - With params `product_id`, `promotion_id`
